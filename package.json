@@ -2,14 +2,14 @@
   "name": "sweet-front",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
+	"scripts": {
+	    "ng": "ng",
+	    "start": "ng serve --proxy-config proxy.conf.json",
+	    "build": "ng build",
+	    "test": "ng test",
+	    "lint": "ng lint",
+	    "e2e": "ng e2e"
+	},
   "private": true,
   "dependencies": {
     "@angular/animations": "^4.2.4",
