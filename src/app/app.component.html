@@ -1,40 +1,65 @@
-<div id="content" class="col-lg-12 col-md-9 col-sm-6">
-    
-    <header id="header" class="col-lg-12">
-    
-      <ul>
-          <li><img src="./assets/images/logo.png"></li>
-          <li><input type="text"  placeholder="Donde" name="" class="form-control"></li>
-          <li><input type="text" placeholder="Cuando" name="" class="form-control"></li>
-          <li><input type="text" placeholder="1 Huesped" name="" class="form-control"></li>
-          <li><a class="navigation_link" style="margin-left: 700px" href="">Conviertete en anfitrion</a></li>
-          <li><a class="navigation_link" href="">Ayuda</a></li>
-          <li><a class="navigation_link" href="">Registrate</a></li>
-          <li><a class="navigation_link" href="">Inicia sesion</a></li>
-      </ul>
-      
-     
-    </header>
-    
-    <nav id="nav" class="col-lg-12">
-      <ul>
-        <!--
-          <li><a [routerLink]="['/home']" [routerLinkActive]="['activado']">Home</a></li>
-          <li><a [routerLink]="['/productos']" [routerLinkActive]="['activado']">Productos</a></li>
-          <li><a [routerLink]="['/crear-producto']" [routerLinkActive]="['activado']">Crear Producto</a></li>-->
-                
-          <li><a href="">Alojamientos</a></li>
-          <li><a href="">Experiencias</a></li>
-          <li><a href="">Restaurantes</a></li>
-      </ul>   
-    </nav>
-    
-    <section id="main" class="col-lg-12">
-     <!-- <router-outlet></router-outlet>-->
-    </section> 
+<div id="content" class="container-fluid">
+   
+      <header id="header">
 
-    <footer id="footer" class="col-lg-12">
-      <p>La pagina de reservas mas valorada por los usuarios</p>
-    </footer>
+        <nav class="navbar navbar-default">
+            
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"></a>                  
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                    
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-item">          
+                      <div>
+                        <li class="active"><a href="#">RESERVAR</a></li>
+                        <li>
+                          <a [routerLink]="['/quienes-somos']" [routerLinkActive]="['active']" >
+                              QUIENES SOMOS
+                          </a>  
+                        </li>
+                        <li><a [routerLink]="['/contact']" [routerLinkActive]="['active']" >CONTACTO</a></li>
+                        <li><a  href="#">€ EUR</a></li>
+                        <li><a  href="#">+34678899832</a></li>
+                      </div>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+        <!-- 
+          <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+              <ul>
+                  <li><img src="./assets/images/logo.png"></li>
+                  <li><input type="text"  placeholder="Donde" name="" class="form-control"></li>
+                  <li><input type="text" placeholder="Cuando" name="" class="form-control"></li>
+                  <li><input type="text" placeholder="1 Huesped" name="" class="form-control"></li>
+              </ul>
+            </div>
+          </div>        
+       -->
+      </header>
+      
+      <section id="main" class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+        
+                 <!--Este componente nativo hace que el enrutador cargue una página dinámicamente-->
+        <router-outlet></router-outlet>
+
+
+
+      </section> 
+
+      <footer id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+        <p>La pagina de reservas mas valorada por los usuarios</p>
+      </footer>
+
 
 </div>

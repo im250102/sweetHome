@@ -35,8 +35,9 @@
 }
 
 #header ul li a{
-	color: red;
-	font-size: 10px;
+	color: #626567;
+	font-size: 18px;
+	font-family: 'PT Serif';
 }
 
 #nav{
@@ -76,3 +77,110 @@
 	text-decoration: none !important;
 	border-bottom:4px solid yellow !important;
 }
+
+/*ARTISTAS Y ALBUMS*/
+
+ #artist-head-card .image,
+ #album-head-card .image
+ {
+ 	width: 150 px;
+ 	height: 120 px;
+ 	overflow: hidden;
+ 	float: left;
+ 	margin-right: 30px;
+ }
+
+
+
+ #artist-head-card .image img{
+ 	width: 130 px;
+ }
+
+
+.artist_image_for_edit img,
+.album_image_for_edit img
+{
+	width: 150 px;
+}
+
+.house-list
+ {
+	margin: 0px;
+	padding: 0px;
+	margin-top: 10px;	
+	list-style: none;
+	min-height: 600px;
+}
+
+.house-list p{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 40px;
+	color: grey;
+}
+
+.house-item
+{
+	width: 30%;
+	margin: 0px;
+	padding: 0px;
+	height: 317px;
+	margin-left: 55px;
+	margin-top: 50px;
+	margin-bottom: 30 px;	
+	border: 1px solid #ccc;
+	overflow: hidden;
+	list-style: none;
+}
+
+.house-image
+ {
+	margin: 0px;
+	height: 300px;
+	width: 100%;
+	
+}
+
+.house-item .house-image img
+{ 
+	width: 100%;
+	height: 100%;
+}
+
+
+.house-item .house-name,
+ {
+ 	text-transform: uppercase;
+	color: white;
+	padding: 10px;
+	background: #222326;
+}
+
+.house-item .house-name a
+{
+	color: black;
+	text-transform: uppercase;
+	text-align: right;
+	//font-style: italic;
+}
+
+.buttons {
+	padding: 10px;
+	background: #222326;
+	overflow: hidden;
+}
+
+.navbar-item{
+	float: right;
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 40%;
+  left: 40%;
+  z-index: 20;
+  color: white;
+  text-shadow: 0 1px 2px rgba(0,0,0,.6);
+  font-size: 4em;
+}
+

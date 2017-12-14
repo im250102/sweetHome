@@ -4,5 +4,9 @@ export class House {
 		public description: string,
 		public price: string,
 		public image: string,
+		public location: string,
+		public numberOfRooms: string,
+		public numberOfBaths: string,
+		public comments: string
 	){}
 }

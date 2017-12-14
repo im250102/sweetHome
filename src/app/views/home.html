@@ -1,0 +1,80 @@
+          <!-- Carrusel de imagenes -->
+          <div id="carrusel" class="carousel slide" data-ride="carousel" >
+              
+              <!-- Indicadores -->
+              <ol class="carousel-indicators">
+                <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+                <li data-target="#carrusel" data-slide-to="1"></li>
+                <li data-target="#carrusel" data-slide-to="2"></li>
+              </ol>
+
+              <!-- Paginas del carrusel -->
+              <div class="carousel-inner" role="listbox">
+                  <div class="item active">                    
+                      <img src="./assets/images/slide1.jpg" style="width:100%;height:500px;" >
+  
+                      <div class="carousel-content">PLAYAS INCREIBLES</div>
+                  </div>
+
+                  <div class="item">
+                      <img src="./assets/images/slide2.jpg" style="width:100%; height:500px;" >
+                      <div class="carousel-content">PUERTO DE SOLLER</div>
+                  </div>
+
+                  <div class="item">
+                      <img src="./assets/images/slide3.jpg" style="width:100%; height:500px;">
+                      <div class="carousel-content">CHARMING VILLAS</div>
+                  </div>
+              </div>
+
+              <!-- Controles anterior/siguiente -->
+              <a class="left carousel-control" href="#carousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+              </a>
+
+              <a class="right carousel-control" href="#carousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+              </a>
+
+          </div>
+          
+          <div class="clearfix"></div>
+
+
+          <!-- Lista de properties -->
+          <div class="house-list">          
+            
+            <p>PROPIEDADES DESTACADAS</p>
+            
+            <ul>
+              
+                <li *ngFor="let house of houses" class="col-lg-3 col-md-6 col-sm-9 col-xs-12 house-item">
+                      <div class="house-image">
+                          <img src="./assets/images/house1.jpg"  />
+                      </div>
+
+                      <div class="house-name">
+                        <a href="" >
+                          {{house.name}}
+                        </a>
+                      </div>i
+
+                      <div class="house-name">
+                        
+                          {{house.description}} 
+
+                      </div>
+
+                      <div class="house-name">
+      
+                          {{house.price}} 
+
+                      </div>
+
+
+                </li>
+
+            </ul>
+          </div>
